@@ -1,0 +1,136 @@
+.nav-link{
+    padding: 10px;
+}
+
+body {
+    font-family: "Open Sans";
+}
+
+strong{
+    color: #0061ff;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    font-weight: bold;
+    color: #0061ff;
+}
+
+.nav {
+    background-color: rgb(244, 241, 255);
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+}
+
+.walled{
+    height: 30px;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.hero {
+    padding: 40px 60px;
+}
+
+.upper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.greeting {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.title{
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 0;
+}
+
+.desc {
+    font-size: 15px;
+    font-weight: 200;
+    margin-top: 0;
+}
+
+.personal-acc {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.profile-img {
+    width: 89px;
+    height: 89px;
+    border-radius: 50%;
+    object-fit: fill;
+    overflow: hidden;
+    border: 5px solid blue;
+}
+
+.name-acc {
+    display: flex;
+    flex-direction: column;
+    text-align: end;
+    margin-right: 10px;
+}
+
+.textbold {
+    font-weight: 700;
+    font-size: 16px;
+    margin-bottom: 0;
+}
+
+.text {
+    font-weight: 200;
+    font-size: 16px;
+    margin-top: 0;
+}
+
+.lower {
+    display: flex;
+    gap: 50px;
+    margin-top: 40px;
+}
+
+.acc-no {
+    border-radius: 20px;
+    background-color: #0061ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    flex-direction: column;
+    color: white;
+}
+
+.balance-info{
+    display: flex;
+    flex: 6;
+}
+
+.balance-num {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.number {
+    font-weight: 600;
+    font-size: 24px;
+}
+
+.num-desc {
+    font-size: var(--p-typography);
+}
