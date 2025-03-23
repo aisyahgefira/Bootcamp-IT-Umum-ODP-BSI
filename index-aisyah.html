@@ -3,27 +3,23 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
-        <link rel="stylesheet" href="./index.css">
+        <title>Ewalled</title>
+        <link rel="stylesheet" href="./index-aisyah.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
-        <style>
-            body{
-                margin: 0px;
-            }
-        </style>
     </head>
 
     <body>
         <nav class="nav">
-            <img class="walled" src="Vector.png" alt="wallet">
+            <img class="walled" src="./asset/Vector.png" alt="wallet">
             <div class="nav-text">
-                <a href="#" style="color:#0061FF ;">Dashboard</a>
+                <a class="nav-link" href="#" style="color:#0061FF ;">Dashboard</a>
                 <a class="nav-link">Transfer</a>
                 <a class="nav-link">Topup</a>
                 <a class="nav-link">Sign Out</a>
-                <img class="sun-icon" style="size: 30px;" src="Vector sun.png" alt="sun">
+                <img class="line" style="size: 30px;" src="./asset/Line 12.png" alt="line">
+                <img class="sun-icon" style="size: 30px;" src="./asset/Sun.png" alt="sun">
             </div>
         </nav>
        
@@ -46,23 +42,170 @@
 
             <div class="lower">
                 <div class="acc-no">
-                    <p>Account No.</p>
-                    <p style="font-weight: bold;">100899</p>
+                    <p class="acc-no-text">Account No.</p>
+                    <p class="acc-num">100899</p>
                 </div>
                 <div class="balance-info">
                     <div class="balance-num">
                         <p>Balance</p>
                         <div class="num-desc">
                             <p class="number">Rp 10.000.000,00</p>
-                            <img src="view 1.png" alt="eye">
+                            <img class="eye" src="./asset/view 1.png" alt="eye">
+                            <div class="ikon"> 
+                                <img class="add" src="./asset/Group 2.png" alt="add">
+                                <img class="share" src="./asset/Group 3.png" alt="share">
+                            </div>
                         </div>
-                    <div class="instrc">
-                        <img src="Group 2.png" alt="add">
-                        <img src="Group 3.png" alt="share">
                     </div>
                 </div>
             </div>
         </section>
+
+        <section class="transactions">
+            <h2>Transaction History</h2>
+            <div class="transaction-controls">
+                <input type="text" id="search" placeholder="Search transactions..." onkeyup="filterTable()">
+                <select id="sort" onchange="sortTable()">
+                    <option value="date">Sort by Date</option>
+                    <option value="amount">Sort by Amount</option>
+                </select>
+            </div>
+            <table id="transactionTable">
+                <thead>
+                    <tr>
+                        <th>Date & Time</th>
+                        <th>Type</th>
+                        <th>From / To</th>
+                        <th>Description</th>
+                        <th>Amount</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>20:10 - 30 June 2022</td>
+                        <td>Transfer</td>
+                        <td>Aisyah</td>
+                        <td>Fore Coffee</td>
+                        <td class="positive">+ 75.000,00</td>
+                    </tr>
+                    <tr>
+                        <td>20:10 - 30 June 2022</td>
+                        <td>Topup</td>
+                        <td> </td>
+                        <td>Topup from Bank Transfer</td>
+                        <td class="negative">- 1.000.000,00</td>
+                    </tr>
+                    <tr>
+                        <td>20:10 - 30 June 2022</td>
+                        <td>Transfer</td>
+                        <td>Aisyah</td>
+                        <td>Fore Coffee</td>
+                        <td class="positive">+ 75.000,00</td>
+                    </tr>
+                    <tr>
+                        <td>20:10 - 30 June 2022</td>
+                        <td>Topup</td>
+                        <td> </td>
+                        <td>Topup from Bank Transfer</td>
+                        <td class="negative">- 1.000.000,00</td>
+                    </tr>
+                    <tr>
+                        <td>20:10 - 30 June 2022</td>
+                        <td>Transfer</td>
+                        <td>Aisyah</td>
+                        <td>Bei barang</td>
+                        <td class="positive">+ 75.000,00</td>
+                    </tr>
+                    <tr>
+                        <td>20:10 - 30 June 2022</td>
+                        <td>Transfer</td>
+                        <td>Gefira</td>
+                        <td>Fore Coffee</td>
+                        <td class="negative">- 1.000.000,00</td>
+                    </tr>
+                    <tr>
+                        <td>20:10 - 30 June 2022</td>
+                        <td>Transfer</td>
+                        <td>Aisyah</td>
+                        <td>Fore Coffee</td>
+                        <td class="positive">+ 75.000,00</td>
+                    </tr>
+                    <tr>
+                        <td>20:10 - 30 June 2022</td>
+                        <td>Topup</td>
+                        <td> </td>
+                        <td>Topup from Bank Transfer</td>
+                        <td class="negative">- 1.000.000,00</td>
+                    </tr>
+                    <tr>
+                        <td>20:10 - 30 June 2022</td>
+                        <td>Transfer</td>
+                        <td>Aisyah</td>
+                        <td>Fore Coffee</td>
+                        <td class="positive">+ 75.000,00</td>
+                    </tr>
+                    <tr>
+                        <td>20:10 - 30 June 2022</td>
+                        <td>Topup</td>
+                        <td> </td>
+                        <td>Topup from Bank Transfer</td>
+                        <td class="negative">- 1.000.000,00</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="pagination">
+                <button class="page-btn">First</button>
+                <button class="page-btn active">1</button>
+                <button class="page-btn">2</button>
+                <button class="page-btn">3</button>
+                <button class="page-btn">Next</button>
+            </div>
+        </section>
+        
+        <script>
+            function filterTable() {
+                var input, filter, table, tr, td, i, txtValue;
+                input = document.getElementById("search");
+                filter = input.value.toUpperCase();
+                table = document.getElementById("transactionTable");
+                tr = table.getElementsByTagName("tr");
+                
+                for (i = 1; i < tr.length; i++) {
+                    td = tr[i].getElementsByTagName("td")[2];
+                    if (td) {
+                        txtValue = td.textContent || td.innerText;
+                        if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                            tr[i].style.display = "";
+                        } else {
+                            tr[i].style.display = "none";
+                        }
+                    }       
+                }
+            }
+            
+            function sortTable() {
+                var table, rows, switching, i, x, y, shouldSwitch;
+                table = document.getElementById("transactionTable");
+                switching = true;
+                while (switching) {
+                    switching = false;
+                    rows = table.rows;
+                    for (i = 1; i < (rows.length - 1); i++) {
+                        shouldSwitch = false;
+                        x = rows[i].getElementsByTagName("TD")[4];
+                        y = rows[i + 1].getElementsByTagName("TD")[4];
+                        if (parseFloat(x.innerHTML.replace(/[,.]/g, '')) < parseFloat(y.innerHTML.replace(/[,.]/g, ''))) {
+                            shouldSwitch = true;
+                            break;
+                        }
+                    }
+                    if (shouldSwitch) {
+                        rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
+                        switching = true;
+                    }
+                }
+            }
+            </script>        
         
     </body>
 </html>
