@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC01_PET_FindPetByID_SUCCESS</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>c3417945-1799-4b12-96da-9ec461d03bab</testCaseGuid>
+</TestCaseEntity>
